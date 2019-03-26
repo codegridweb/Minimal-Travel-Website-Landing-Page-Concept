@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Landing Page Concept</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+      <div class="temp"></div>
+      <div class="first-block"></div>
+      <div class="second-block"></div>
+      <div class="loader">
+            <ul>
+                  <li>L</li>
+                  <li>O</li>
+                  <li>A</li>
+                  <li>D</li>
+                  <li>I</li>
+                  <li>N</li>
+                  <li>G</li>
+            </ul>
+      </div>
+      <div class="third-block"></div>
+      <div class="menu">
+            <ion-icon name="menu"></ion-icon>
+      </div>
+      <div class="logo">
+            <span>Explore</span>
+      </div>
+      <div class="content">
+            <div class="heading">
+                  <span>Faroe Islands</span>
+            </div>
+            <div class="desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium omnis nostrum eum, ipsa quia voluptatem. Quia ut, iste ad obcaecati doloremque voluptas porro at maiores eaque?</p>
+            </div>
+            <div class="link">
+                  <button type="button">VISIT NOW</button>
+            </div>
+      </div>
+      <div class="img">
+            <img src="hero.jpg" alt="">
+      </div>
+      <div class="media">
+            <ul>
+                  <li><ion-icon name="logo-facebook"></ion-icon></li>
+                  <li><ion-icon name="logo-instagram"></ion-icon></li>
+                  <li><ion-icon name="logo-twitter"></ion-icon></li>
+            </ul>
+      </div>
+      <div class="watch">
+            <ion-icon name="play"></ion-icon>
+      </div>
+
+      <script type="text/javascript">
+
+      TweenMax.from(".logo", 1.6, {
+            delay: 6.4,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".menu", 1.6, {
+            delay: 6.5,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".heading", 1.6, {
+            delay: 6.6,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".desc", 1.6, {
+            delay: 6.7,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from("button", 1.6, {
+            delay: 6.8,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".watch", 1.6, {
+            delay: 6.9,
+            opacity: 0,
+            y: 30,
+            rotation: 90,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.staggerFrom(".media ul li", 2, {
+            delay: 7,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      }, 0.2);
+
+      </script>
+</body>
+</html>
